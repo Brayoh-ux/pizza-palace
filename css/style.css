@@ -65,6 +65,10 @@ a{
     height: 320px;
     margin: 10px;
     background-color: #B1B1B1;
+    background-image: url("/img/pizza1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
 }
 .search,.order{
     width: 540px;
@@ -74,6 +78,12 @@ a{
     display: flex;
     flex-direction: column;
 }
+.search{
+    background-image: url("/img/pizza3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
 .find{
     display: flex;
     flex-direction: column;
@@ -81,12 +91,12 @@ a{
     align-content: center;
 }
 .search p{
-    color: #fff;
+    color: rgb(252, 252, 252);
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
     line-height: 0;
-    text-shadow: 2px 2px 12px rgba(0,0,0,0.5);
+    text-shadow: 2px 2px 12px rgba(0,0,0,0.8);
 }
 .food-one,.food-two,.food-three{
     width: 354px;
@@ -255,4 +265,17 @@ box-shadow:2px 2px 12px rgba(0,0,0,0.2);
 }
 .navigation-content{
     border-bottom: 2px solid rgba(255,255,255,.10);
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: fantasy;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.copyright p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #B9B9B9;
 }
