@@ -243,3 +243,16 @@ box-shadow:2px 2px 12px rgba(0,0,0,0.2);
     background-color: #0A0A0A;
     height: 150px;
 }
+.social ul li a{
+    padding: 15px;
+}
+.social img{
+    height: 15px;
+}
+.footer-menu ul li a{
+    border-left: 3px solid #2E2E2E;
+    color: rgba(255,255,255,.80);
+}
+.navigation-content{
+    border-bottom: 2px solid rgba(255,255,255,.10);
+}
