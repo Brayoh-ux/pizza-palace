@@ -19,7 +19,7 @@ a{
     width: 100%;
     height: 60px;
     background-color: #8b1418;
-    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);  
 }
 .navigation-content{
     height: 60px;
@@ -69,6 +69,7 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
+    text-shadow: 2px 5px 5px slategray;
 }
 .search,.order{
     width: 540px;
@@ -120,11 +121,13 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
+    text-shadow: 2px 5px 5px slategray;
 }
 .food-two{
     background-image: url("/img/pizza3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    text-shadow: 2px 5px 5px slategray;
     border-radius: 5px;
 }
 .food-three{
@@ -132,6 +135,7 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
+    text-shadow: 2px 5px 5px slategray;
     background-color: transparent;
 }
 .second-row{
@@ -148,15 +152,28 @@ a{
     align-items: center;
     line-height: 0px;
 }
-.flavor p:nth-child(1),.breakfast p:nth-child(1){
+.flavor{
+    background-image: url("/img/flavor.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    background-color: transparent;
+    text-shadow: 2px 5px 5px slategray;
+}
+.flavor p,.breakfast p{
     color: #fff;
     font-weight: bold;
     font-size: 40px;
 }
-.flavor p:nth-child(2),.breakfast p:nth-child(2){
-    font-size: 20px;
-    color: rgba(255,255,255,.50);
-    text-align: center;
+.flavor a, .breakfast a{
+    text-decoration: none;
+}
+.breakfast{
+    background-image: url("/img/toppings.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    text-shadow: 2px 5px 5px slategray;
 }
 .third-row{
     display: flex;
@@ -278,12 +295,14 @@ box-shadow:2px 2px 12px rgba(0,0,0,0.2);
     background-color: #0A0A0A;
     height: 150px;
 }
+.social img{
+    height: 35px;
+    
+}
 .social ul li a{
     padding: 15px;
 }
-.social img{
-    height: 15px;
-}
+
 .footer-menu ul li a{
     border-left: 3px solid #2E2E2E;
     color: rgba(255,255,255,.80);
