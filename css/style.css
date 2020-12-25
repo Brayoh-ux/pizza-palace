@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 *{
     box-sizing: border-box;
 }body{
@@ -7,6 +7,12 @@
     background: url("/img/photo-1594007654729-407eedc4be65.jpeg");
     background-attachment: fixed;
     background-size: cover;
+}
+.logo{
+    color: wheat;
+    font-family: 'Yellowtail', cursive;
+    font-weight: 600;
+    font-size: 23px;
 }
 ul{
     list-style: none;
