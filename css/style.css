@@ -133,6 +133,7 @@ a{
 }
 .food-three{
     background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 5px;
     text-shadow: 2px 5px 5px slategray;
 }
