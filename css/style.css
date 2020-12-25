@@ -4,8 +4,8 @@
 }body{
     margin: 0;
     padding: 0;
-    background: url("");
     background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 .logo{
@@ -71,7 +71,6 @@ a{
     height: 320px;
     margin: 10px;
     background-color: #B1B1B1;
-    background-image: url("/img/pizza1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
@@ -86,13 +85,11 @@ a{
     flex-direction: column;
 }
 .search{
-    background-image: url("/img/pizza3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
 }
 .order{
-    background-image: url("/img/pizza_.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
@@ -123,26 +120,21 @@ a{
     text-shadow: 2px 2px 12px rgba(0,0,0,0.2);
 }
 .food-one{
-    background-image: url("/img/pizza_2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
     text-shadow: 2px 5px 5px slategray;
 }
 .food-two{
-    background-image: url("/img/pizza3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     text-shadow: 2px 5px 5px slategray;
     border-radius: 5px;
 }
 .food-three{
-    background-image: url("/img/piza11.jpeg");
-    background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
     text-shadow: 2px 5px 5px slategray;
-    background-color: transparent;
 }
 .second-row{
     display: flex;
@@ -159,7 +151,6 @@ a{
     line-height: 0px;
 }
 .flavor{
-    background-image: url("/img/flavor.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
@@ -175,7 +166,6 @@ a{
     text-decoration: none;
 }
 .breakfast{
-    background-image: url("/img/toppings.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 5px;
