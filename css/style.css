@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 *{
     box-sizing: border-box;
 }body{
@@ -208,8 +211,6 @@ button:active{
     border-radius: 5px;
 }
 .search p{
-    background-size: cover;
-    background-repeat: no-repeat;
     border-radius: 5px;
     text-shadow: 2px 5px 5px slategray;
     color:wheat;
@@ -261,6 +262,7 @@ box-shadow:2px 2px 12px rgba(0,0,0,0.2);
 .footer{
     background-color: #0A0A0A;
     height: 150px;
+    border-radius: 5px;
 }
 .social img{
     height: 35px;
@@ -358,4 +360,51 @@ box-shadow:2px 2px 12px rgba(0,0,0,0.2);
 .container button a:hover{
     text-decoration: none;
     color: #8b1418;
+}
+/* about us */
+.place p{
+    margin-top: 10px;
+    margin-bottom: 60px;
+    border-radius: 5px;
+    text-shadow: 2px 5px 5px slategray;
+    color:wheat;
+    font-size: 70px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-family: 'Yellowtail', cursive;
+    background-color: #c9141a;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.about{
+    background-color: #2e2e2e77;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+.about p{
+    color: #fff;
+    font-family: 'Kalam', cursive;
+    font-size: 1.2rem;
+    justify-content: space-between;
+}
+.about h4{
+    font-size: 3rem;
+    color: sandybrown;
+    text-shadow: 2px 5px 5px slategray;
+    font-family: 'Niconne', cursive;
+}
+.about img{
+    height: 180px;
+    width: 200px;
+    background-position:center ;
+    shape-outside: circle();
+    margin: 20px;
+    border-radius: 50%;
+}
+.location p{
+    color: black;
+    text-shadow: 2px 5px 5px #fff;
 }
