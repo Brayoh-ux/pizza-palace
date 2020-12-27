@@ -10,48 +10,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Palace</title>
 </head>
-<body style="background-image: url(./img/photo-1594007654729-407eedc4be65.jpeg);">
-    <div class="navigation-container">
-        <div class="navigation-content">
-            <div class="logo">
-                <img src="./img/call.jpeg" height="60px">Pizza Palace
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="./index.html">HOME</a></li>
-                    <li><a href="./aboutus.html">ABOUT US</a></li>
-                </ul>
-            </div>
-            <div class="cart">
-                <a href="#">ONLINE ODER</a>
+<body >
+    <div class="container-fluid" style="background-image: url(./img/photo-1594007654729-407eedc4be65.jpeg);"style="background-image: url(./img/photo-1594007654729-407eedc4be65.jpeg);">
+        <div class="navigation-container">
+            <div class="navigation-content">
+                <div class="logo">
+                    <img src="./img/call.jpeg" height="60px">Pizza Palace
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./aboutus.html">ABOUT US</a></li>
+                    </ul>
+                </div>
+                <div class="cart">
+                    <a href="#">ONLINE ORDER</a>
+                </div>
             </div>
         </div>
-    </div>
-
-
-    <div class="footer">
-        <div class="navigation-content">
-            <div class="logo"><img src="./img/call.jpeg" height="60px"></div>
-            <div class="menu footer-menu">
-                <ul>
-                    <li><a href="./contact.html">CONTACT US</a></li>
-                    <li><a href="./aboutus.html">TEAM</a></li>
-                </ul>
-            </div>
+        <div class="container about crust">
+            <h2>MENU</h2>
             <div class="row">
-                <div class="col-sm-4">
-                    <img src="./social/facebook.png">   
+                <div class="col-md-3">
+                    <h4>Pizza</h4>
+                    <p>Grilled Chicken Summer.....<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.1000</font></p>
+                    <p>Chicken Wrap Special....<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.800</font></p>
+                    <p>Ice-cream Summer.......<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.900</font></p>
+                    <p>Veggie Special.....<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.700</font></p>
+                    <p>Delux Cheese Bugger.......<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.1200</font></p>
                 </div>
-                <div class="col-sm-4">
-                    <img src="./social/twitter.png">    
+                <div class="col-md-3">
+                    <h4>Size</h4>
+                    <p>Each <font style="color: black; text-shadow: 2px 5px 5px snow;">+ Sh.100</font></p>
+                    <p>Small</p>
+                    <p>Medium</p>
+                    <p>Large</p>
                 </div>
-                <div class="col-sm-4">
-                    <img src="./social/you_tube.png">   
+                <div class="col-md-3">
+                    <h4>Crust</h4>
+                    <p>Crisply......<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.100</font></p>
+                    <p>Stuffed...... <font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.150</font></p>
+                    <p>Glutten-free..... <font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.50</font></p>
+                </div>
+                <div class="col-md-3">
+                    <h4>Toppings</h4>
+                    <p>Mushrooms.....<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.50</font></p>
+                    <p>Blackolives....<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.40</font></p>
+                    <p>Cheese......<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.100</font></p>
+                    <p>Green pepper.....<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.50</font></p>
                 </div>
             </div>
         </div>
-        <div class="copyright">
-            <p>Copyright 2020 || Pizza Palace</p>
+        <div class="container">
+            <div class="place">
+                <h1>ORDER YOUR PIZZA</h1>
+            </div>
+        </div>
+        <p id="output"></p>
+        <!--form part  -->
+        <div class="placeOrder">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Some piks Here</h2>
+                </div>
+                <div class="col-md-4">
+                    <form >
+                        <div class="formgroup">
+                            <div id="pizza">
+                                <label for="pizaTpye">Pizza</label>
+                                <select class="custom-select" id="pizzaType">
+                                    <option label="Grilled Chicken Summer" value="1000"></option>
+                                    <option label="Chicken Wrap Special" value="800"></option>
+                                    <option label="Icream Summer" value="900"></option>
+                                    <option label="Veggie Special" value="700"></option>
+                                    <option label="Delux Cheese Bugger" value="1200"></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div id="size">
+                                <label for="pizzaSize">Size</label>
+                                <select class="custom-select" id="pizzaSize">
+                                    <option label="Small" value="100"></option>
+                                    <option label="Medium" value="100"></option>
+                                    <option label="Large" value="100"></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div id="crust">
+                                <label for="pizzaCrust">Crust</label>
+                                <select class="custom-select" id="pizzaCrust">
+                                    <option label="Crispy" value="100"></option>
+                                    <option label="Stuffed" value="150"></option>
+                                    <option label="Glutten-free" value="50"></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div id="toppings">
+                                <label for="pizzaToppings">Toppings</label>
+                                <select class="custom-select" id="pizzaToppings">
+                                    <option label="Mushrooms" value="50"></option>
+                                    <option label="Blackolives" value="40"></option>
+                                    <option label="Cheese" value="100"></option>
+                                    <option label="Green Pepper" value="50"></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div id="number">
+                                <label for="quantity">How many Pizzas?</label>
+                                <input type="number" class="form-control" name="pizza" id="quantity" placeholder="0" min="0">
+                            </div>
+                        </div><br><br>
+                        <button class=" btn btn-danger submit" type="submit" id="submit2" 
+                        onclick="totalAmount();"> ORDER </button><br>
+                        <br>
+                        <br>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <h2>Output Here</h2>
+                </div>
+            </div>
+        </div>
+        <!-- footer part -->
+        <div class="footer">
+            <div class="navigation-content">
+                <div class="logo"><img src="./img/call.jpeg" height="60px"></div>
+                <div class="menu footer-menu">
+                    <ul>
+                        <li><a href="./contact.html">CONTACT US</a></li>
+                        <li><a href="./aboutus.html">TEAM</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="./social/facebook.png">   
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="./social/twitter.png">    
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="./social/you_tube.png">   
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright 2020 || Pizza Palace</p>
+            </div>
         </div>
     </div>
 </body>
