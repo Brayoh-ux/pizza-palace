@@ -469,6 +469,7 @@ form{
 }
 .con1 label{
     color: snow;
+    font-family: 'Kalim', cursive;
     font-weight: 600;
 }
 .con1 ::placeholder{
