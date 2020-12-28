@@ -4,6 +4,13 @@ function Contact (name, email){
     this.email = email;
     this.comment = comment;
 }
+// delivery Bussiness Logic
+function Delivery (name, area, phone){
+    this.name = name;
+    this.area = area;
+    this.phone = phone;
+}
+
 // order Bussiness logic
 function getPizza() {
     var pizza = document.getElementById("pizzaType").value;
@@ -45,6 +52,22 @@ $(document).ready(function (){
        }
 
    });
+
+   $("#comment").submit(function(d){
+    d.preventDefault();
+    var name = $("input#name").val();
+    var place = $("input#place").val();
+    var phone = $("input#number").val();
+
+    if(name == "" || place == "" || comment == "" || phone == "") {
+        alert("Please fill in the form completely!");
+    }
+    else{
+        $("#deliver").text("Thank you " + name + " your pizza will be delivered to " + place + 
+        " we will contact you through " + phone + ". Transport cost is Ksh.200");
+    }
+
+});
 // order section
    $("#makeOrder").submit(function (e){
        e.preventDefault();
@@ -57,5 +80,5 @@ $(document).ready(function (){
             alert("Please specify the type of Pizza you want!!");
         }
    });
-      
+
 });
