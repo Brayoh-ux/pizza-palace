@@ -33,29 +33,28 @@
             <div class="row">
                 <div class="col-md-3">
                     <h4>Pizza</h4>
-                    <p>Grilled Chicken Summer.....<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.1000</font></p>
-                    <p>Chicken Wrap Special....<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.800</font></p>
+                    <p>Grilled Chicken Summer.....<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.1200</font></p>
+                    <p>Chicken Wrap Special....<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.1000</font></p>
                     <p>Ice-cream Summer.......<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.900</font></p>
-                    <p>Veggie Special.....<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.700</font></p>
+                    <p>Veggie Special.....<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.800</font></p>
                     <p>Delux Cheese Bugger.......<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.1200</font></p>
                 </div>
                 <div class="col-md-3">
                     <h4>Size</h4>
-                    <p>Each <font style="color: black; text-shadow: 2px 5px 5px snow;">+ Sh.100</font></p>
-                    <p>Small</p>
-                    <p>Medium</p>
-                    <p>Large</p>
+                    <p>Small.......<font style="color: black; text-shadow: 2px 5px 5px snow;">@ Sh.100</font></p>
+                    <p>Medium.......<font style="color: black; text-shadow: 2px 5px 5px snow;">@ Sh.200</font></p>
+                    <p>Large.......<font style="color: black; text-shadow: 2px 5px 5px snow;">@ Sh.300</font></p>
                 </div>
                 <div class="col-md-3">
                     <h4>Crust</h4>
                     <p>Crisply......<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.100</font></p>
                     <p>Stuffed...... <font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.150</font></p>
-                    <p>Glutten-free..... <font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.50</font></p>
+                    <p>Glutten-free..... <font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.100</font></p>
                 </div>
                 <div class="col-md-3">
                     <h4>Toppings</h4>
-                    <p>Mushrooms.....<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.50</font></p>
-                    <p>Blackolives....<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.40</font></p>
+                    <p>Mushrooms.....<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.100</font></p>
+                    <p>Blackolives....<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.50</font></p>
                     <p>Cheese......<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.100</font></p>
                     <p>Green pepper.....<font style="color: black; text-shadow: 2px 5px 5px snow;">@Sh.50</font></p>
                 </div>
@@ -74,15 +73,16 @@
                     <h2>Some piks Here</h2>
                 </div>
                 <div class="col-md-4">
-                    <form >
+                    <form id="makeOrder">
                         <div class="formgroup">
                             <div id="pizza">
                                 <label for="pizaTpye">Pizza</label>
                                 <select class="custom-select" id="pizzaType">
-                                    <option label="Grilled Chicken Summer" value="1000"></option>
-                                    <option label="Chicken Wrap Special" value="800"></option>
+                                    <option label="Choose"></option>
+                                    <option label="Grilled Chicken Summer" value="1200"></option>
+                                    <option label="Chicken Wrap Special" value="1000"></option>
                                     <option label="Icream Summer" value="900"></option>
-                                    <option label="Veggie Special" value="700"></option>
+                                    <option label="Veggie Special" value="800"></option>
                                     <option label="Delux Cheese Bugger" value="1200"></option>
                                 </select>
                             </div>
@@ -91,9 +91,10 @@
                             <div id="size">
                                 <label for="pizzaSize">Size</label>
                                 <select class="custom-select" id="pizzaSize">
+                                    <option label="Choose"></option>
                                     <option label="Small" value="100"></option>
-                                    <option label="Medium" value="100"></option>
-                                    <option label="Large" value="100"></option>
+                                    <option label="Medium" value="200"></option>
+                                    <option label="Large" value="300"></option>
                                 </select>
                             </div>
                         </div>
@@ -101,9 +102,10 @@
                             <div id="crust">
                                 <label for="pizzaCrust">Crust</label>
                                 <select class="custom-select" id="pizzaCrust">
+                                    <option label="Choose"></option>
                                     <option label="Crispy" value="100"></option>
                                     <option label="Stuffed" value="150"></option>
-                                    <option label="Glutten-free" value="50"></option>
+                                    <option label="Glutten-free" value="100"></option>
                                 </select>
                             </div>
                         </div>
@@ -111,8 +113,9 @@
                             <div id="toppings">
                                 <label for="pizzaToppings">Toppings</label>
                                 <select class="custom-select" id="pizzaToppings">
-                                    <option label="Mushrooms" value="50"></option>
-                                    <option label="Blackolives" value="40"></option>
+                                    <option label="Choose"></option>
+                                    <option label="Mushrooms" value="100"></option>
+                                    <option label="Blackolives" value="50"></option>
                                     <option label="Cheese" value="100"></option>
                                     <option label="Green Pepper" value="50"></option>
                                 </select>
@@ -125,13 +128,16 @@
                             </div>
                         </div><br><br>
                         <button class=" btn btn-danger submit" type="submit" id="submit2" 
-                        onclick="totalAmount();"> ORDER </button><br>
+                        > ORDER </button><br>
                         <br>
                         <br>
                     </form>
                 </div>
                 <div class="col-md-4">
-                    <h2>Output Here</h2>
+                    <div class="orderlist">
+                        <h3>Order Check</h3>
+                        <p id="orderList"></p>
+                    </div>
                 </div>
             </div>
         </div>
