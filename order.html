@@ -8,14 +8,14 @@
     <script src="./js/script.js"></script>
     <link rel="icon" href="./img/call.jpeg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza Palace</title>
+    <title>Brayoh Pizza Palace</title>
 </head>
 <body >
     <div class="container-fluid" style="background-image: url(./img/photo-1594007654729-407eedc4be65.jpeg);"style="background-image: url(./img/photo-1594007654729-407eedc4be65.jpeg);">
         <div class="navigation-container">
             <div class="navigation-content">
                 <div class="logo">
-                    <img src="./img/call.jpeg" height="60px">Pizza Palace
+                    <img src="./img/call.jpeg" height="60px">Brayoh Pizza Palace
                 </div>
                 <div class="menu">
                     <ul>
@@ -64,79 +64,98 @@
             <div class="place">
                 <h1>ORDER YOUR PIZZA</h1>
             </div>
-        </div>
-        <p id="output"></p>
-        <!--form part  -->
-        <div class="placeOrder">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2>Some piks Here</h2>
-                </div>
-                <div class="col-md-4">
-                    <form id="makeOrder">
-                        <div class="formgroup">
-                            <div id="pizza">
-                                <label for="pizaTpye">Pizza</label>
-                                <select class="custom-select" id="pizzaType">
-                                    <option label="Choose"></option>
-                                    <option label="Grilled Chicken Summer" value="1200"></option>
-                                    <option label="Chicken Wrap Special" value="1000"></option>
-                                    <option label="Icream Summer" value="900"></option>
-                                    <option label="Veggie Special" value="800"></option>
-                                    <option label="Delux Cheese Bugger" value="1200"></option>
-                                </select>
-                            </div>
+            <p id="output"></p>
+            <!--form part  -->
+            <div class="placeOrder">
+                <div class="row">
+                    <div class="col-md-4 con con1">
+                        <div class="orderlist">
+                            <h3>Delivery Request</h3>   
                         </div>
-                        <div class="form-group">
-                            <div id="size">
-                                <label for="pizzaSize">Size</label>
-                                <select class="custom-select" id="pizzaSize">
-                                    <option label="Choose"></option>
-                                    <option label="Small" value="100"></option>
-                                    <option label="Medium" value="200"></option>
-                                    <option label="Large" value="300"></option>
-                                </select>
+                        <label for="name">Name :</label><br><br>
+                        <input type="text" placeholder="Enter your name" id="name" reqiured><br><br>
+
+                        <label for="number">Phone Number:</label><br><br>
+                        <input type="text" placeholder="Enter your name" id="number" reqiured><br><br>
+                        
+                        <label for="place">Place :</label><br><br>
+                        <input type="text " placeholder="Enter your place" id="place" required><br><br>
+                
+                        <form id="comment" class="com"> <br><br>
+                            <button type="submit" class="btn btn-outline-success">Deliver</button><br><br>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <form id="makeOrder">
+                            <div class="orderlist">
+                                <h3>Order Form</h3>   
                             </div>
+                            <div class="form-group">
+                                <div id="pizza">
+                                    <label for="pizaTpye">Pizza</label>
+                                    <select class="custom-select" id="pizzaType">
+                                        <option label="Choose"></option>
+                                        <option class="option" label="Grilled Chicken Summer" value="1200"></option>
+                                        <option label="Chicken Wrap Special" value="1000"></option>
+                                        <option label="Icream Summer" value="900"></option>
+                                        <option label="Veggie Special" value="800"></option>
+                                        <option label="Delux Cheese Bugger" value="1200"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div id="size">
+                                    <label for="pizzaSize">Size</label>
+                                    <select class="custom-select" id="pizzaSize">
+                                        <option label="Choose"></option>
+                                        <option label="Small" value="100"></option>
+                                        <option label="Medium" value="200"></option>
+                                        <option label="Large" value="300"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div id="crust">
+                                    <label for="pizzaCrust">Crust</label>
+                                    <select class="custom-select" id="pizzaCrust">
+                                        <option label="Choose"></option>
+                                        <option label="Crispy" value="100"></option>
+                                        <option label="Stuffed" value="150"></option>
+                                        <option label="Glutten-free" value="100"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div id="toppings">
+                                    <label for="pizzaToppings">Toppings</label>
+                                    <select class="custom-select" id="pizzaToppings">
+                                        <option label="Choose"></option>
+                                        <option label="Mushrooms" value="100"></option>
+                                        <option label="Blackolives" value="50"></option>
+                                        <option label="Cheese" value="100"></option>
+                                        <option label="Green Pepper" value="50"></option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div id="number">
+                                    <label for="quantity">How many Pizzas?</label>
+                                    <input type="number" class="form-control" name="pizza" id="quantity" placeholder="0" min="0">
+                                </div>
+                            </div><br><br>
+                            <button class=" btn btn-danger submit" type="submit" id="submit2" 
+                            > ORDER </button><br>
+                            <br>
+                            <br>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="orderlist con"><br>
+                            <h3>Order Check</h3>
+                            <p id="orderList"></p>
+                            <h3>Delivery Report</h3>
+                            <p id="deliver"></p>
                         </div>
-                        <div class="form-group">
-                            <div id="crust">
-                                <label for="pizzaCrust">Crust</label>
-                                <select class="custom-select" id="pizzaCrust">
-                                    <option label="Choose"></option>
-                                    <option label="Crispy" value="100"></option>
-                                    <option label="Stuffed" value="150"></option>
-                                    <option label="Glutten-free" value="100"></option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div id="toppings">
-                                <label for="pizzaToppings">Toppings</label>
-                                <select class="custom-select" id="pizzaToppings">
-                                    <option label="Choose"></option>
-                                    <option label="Mushrooms" value="100"></option>
-                                    <option label="Blackolives" value="50"></option>
-                                    <option label="Cheese" value="100"></option>
-                                    <option label="Green Pepper" value="50"></option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div id="number">
-                                <label for="quantity">How many Pizzas?</label>
-                                <input type="number" class="form-control" name="pizza" id="quantity" placeholder="0" min="0">
-                            </div>
-                        </div><br><br>
-                        <button class=" btn btn-danger submit" type="submit" id="submit2" 
-                        > ORDER </button><br>
-                        <br>
-                        <br>
-                    </form>
-                </div>
-                <div class="col-md-4">
-                    <div class="orderlist">
-                        <h3>Order Check</h3>
-                        <p id="orderList"></p>
                     </div>
                 </div>
             </div>
@@ -164,7 +183,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>Copyright 2020 || Pizza Palace</p>
+                <p>Copyright 2020 || Brayoh Pizza Palace</p>
             </div>
         </div>
     </div>
