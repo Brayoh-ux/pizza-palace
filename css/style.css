@@ -464,6 +464,8 @@ form{
 }
 .con{
     background-color: rgba(112, 128, 144, 0.267);
+    color: snow;
+    font-weight: 600;
 }
 .con1 label{
     color: snow;
