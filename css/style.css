@@ -434,3 +434,24 @@ form{
     border-radius: 10px;
     background-color: rgba(255, 250, 250, 0.479);
 }
+.orderlist{
+    background-color: #2e2e2e59;
+    border-radius: 7px;
+}
+.orderlist h3{
+    color: wheat;
+    text-shadow: 2px 3px 5px slategray;
+    font-size: 2.2rem;
+    font-weight: 600;
+    font-family: 'Yellowtail', cursive;
+}
+.orderlist p{
+    color: #fff;
+    font-family: 'Kalam', cursive;
+    font-style: italic;
+    line-height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: larger;
+}
