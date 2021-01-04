@@ -482,3 +482,16 @@ form{
     color: #fff;
     background-color: #4d0507;
 }
+/* active nav bar */
+ul li.active a{
+    background-color: #eee;
+    color: #8b1418;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin-top: 6px;
+    text-decoration: none;
+    transition: .5s ease-in-out;
+}
